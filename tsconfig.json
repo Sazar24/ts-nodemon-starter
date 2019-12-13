@@ -5,15 +5,21 @@
         "moduleResolution": "node",
         "noEmitOnError": true,
         "noImplicitAny": true,
+        "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
+        "allowJs": true,
         "sourceMap": true,
         "baseUrl": ".",
         "paths": { "*": [ "src/types/*" ] },
         "sourceRoot": "src",
-        "outDir": "dist"
+        "outDir": "dist",
+
+        "lib": ["es6", "dom"],
+        "types": ["reflect-metadata" , "jest"],
     },
     "typeRoots": [
         "node_module/@types"
+        
     ],
     "include": [
         "src/**/*" 
